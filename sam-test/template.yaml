@@ -19,4 +19,9 @@ Resources:
     Properties:
       CodeUri: functions/test
       Handler: main.lambda_handler
+      Events:
+        SQSEvent:
+          Type: SQS
+          Properties:
+            Queue: arn:aws:sqs:ap-northeast-1:797964065122:test-que
 

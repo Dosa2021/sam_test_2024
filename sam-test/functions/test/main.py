@@ -1,3 +1,4 @@
-def lambda_handler(event, context):
-    print('test-----------')
+def lambda_handler(event, _context):
+    print('event-----')
+    print(event)
 
